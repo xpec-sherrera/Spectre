@@ -1,0 +1,21 @@
+{
+    "type": "object",
+    "properties":{
+        "products":{
+            "type": "array",
+            "items":{
+                "type": "object",
+                "properties":{
+                  "sku":{
+                    "type": "string"
+                  },
+                  "quantity":{
+                    "type": "number"
+                  }
+                },
+                "required":["sku", "quantity"]
+            }
+        }
+    },
+    "required": ["products"]
+}
